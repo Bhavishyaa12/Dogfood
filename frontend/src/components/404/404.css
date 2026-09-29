@@ -1,0 +1,23 @@
+div.error-message {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 8px;
+    min-height: 100vh;
+}
+
+.not-found-header {
+    color: gray;
+    margin: 0;
+}
+
+.sad-face {
+    display: block;
+    margin: 0 auto;
+}
+
+p.error-text {
+    text-align: center;
+    letter-spacing: 0.2rem;
+    margin: 0;
+}

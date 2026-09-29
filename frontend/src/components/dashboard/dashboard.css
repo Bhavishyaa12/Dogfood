@@ -1,0 +1,259 @@
+/* Dashboard */
+.dashboard-page {
+    min-height: 100vh;
+    background: #f8fafc;
+    color: #0f172a;
+}
+
+.dashboard-nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 48px;
+    background: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.dashboard-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+    color: #0f172a;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dashboard-flower-icon {
+    width: 26px;
+    height: 26px;
+    color: #15803d;
+}
+
+.dashboard-gallery-btn {
+    padding: 9px 20px;
+    color: #2563eb;
+    background: #ffffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.dashboard-gallery-btn:hover {
+    background: #eff6ff;
+    border-color: #2563eb;
+}
+
+.dashboard-content {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 64px 48px 80px;
+}
+
+.dashboard-welcome {
+    margin-bottom: 38px;
+}
+
+.dashboard-eyebrow {
+    margin-bottom: 8px;
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+}
+
+.dashboard-welcome h1 {
+    margin-bottom: 10px;
+    font-size: clamp(2.3rem, 4vw, 3.4rem);
+    line-height: 1.15;
+    letter-spacing: -0.04em;
+}
+
+.dashboard-welcome p:last-child {
+    max-width: 620px;
+    color: #64748b;
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.dashboard-card {
+    min-height: 290px;
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.dashboard-card-primary {
+    border-top: 3px solid #2563eb;
+}
+
+.card-icon {
+    width: 42px;
+    height: 42px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 22px;
+    color: #2563eb;
+    background: #eff6ff;
+    border-radius: 10px;
+    font-size: 1.35rem;
+    font-weight: 700;
+}
+
+.dashboard-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+    letter-spacing: -0.02em;
+}
+
+.dashboard-card p {
+    flex: 1;
+    color: #64748b;
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+.dashboard-card button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+    padding: 11px 14px;
+    color: #ffffff;
+    background: #2563eb;
+    border: 1px solid #2563eb;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dashboard-card button:hover {
+    background: #1d4ed8;
+}
+
+.dashboard-card .dashboard-disabled {
+    color: #64748b;
+    background: #f8fafc;
+    border-color: #e2e8f0;
+    cursor: not-allowed;
+}
+
+.dashboard-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    padding: 20px 24px;
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+}
+
+.dashboard-info > div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 4px 24px;
+    border-right: 1px solid #e2e8f0;
+}
+
+.dashboard-info > div:first-child {
+    padding-left: 0;
+}
+
+.dashboard-info > div:last-child {
+    border-right: none;
+}
+
+.info-label {
+    color: #94a3b8;
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+}
+
+.dashboard-info strong {
+    color: #334155;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-card {
+        min-height: 240px;
+    }
+}
+
+@media (max-width: 700px) {
+    .dashboard-nav {
+        padding: 14px 20px;
+    }
+
+    .dashboard-brand span {
+        font-size: 1rem;
+    }
+
+    .dashboard-content {
+        padding: 44px 20px 60px;
+    }
+
+    .dashboard-info {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .dashboard-info > div,
+    .dashboard-info > div:first-child {
+        padding: 8px 0;
+        border-right: none;
+        border-bottom: 1px solid #e2e8f0;
+    }
+
+    .dashboard-info > div:last-child {
+        border-bottom: none;
+    }
+}
+
+.dashboard-actions { display:flex; gap:10px; align-items:center; }
+.dashboard-logout { padding:9px 16px; color:#475569; background:#fff; border:1px solid #cbd5e1; border-radius:8px; font-weight:600; cursor:pointer; }
+.dashboard-message { margin:20px 0; padding:13px 16px; border:1px solid #bfdbfe; background:#eff6ff; color:#1e40af; border-radius:10px; }
+.dashboard-panel { margin-top:20px; padding:26px; background:#fff; border:1px solid #e2e8f0; border-radius:14px; box-shadow:0 4px 12px rgba(15,23,42,.04); }
+.dashboard-panel h2 { margin-bottom:18px; font-size:1.2rem; }
+.dashboard-row { display:flex; justify-content:space-between; align-items:center; gap:20px; padding:16px 0; border-top:1px solid #f1f5f9; }
+.dashboard-row > div { display:flex; flex-direction:column; gap:5px; }
+.dashboard-row span, .judge-card span { color:#64748b; font-size:.85rem; }
+.dashboard-row button, .judge-card > button { padding:9px 14px; color:#fff; background:#2563eb; border:1px solid #2563eb; border-radius:8px; font-weight:600; cursor:pointer; }
+.muted { color:#64748b; font-size:.9rem; }
+.mini-form { display:flex; flex-direction:column; gap:9px; margin-top:16px; }
+.mini-form input,.mini-form select,.mini-form textarea,.judge-card input,.judge-card textarea { width:100%; padding:10px 12px; border:1px solid #cbd5e1; border-radius:8px; font:inherit; }
+.mini-form textarea,.judge-card textarea { min-height:80px; resize:vertical; }
+.mini-form button { display:flex; justify-content:space-between; align-items:center; padding:10px 13px; color:#fff; background:#2563eb; border:1px solid #2563eb; border-radius:8px; font-weight:600; cursor:pointer; }
+.judge-card { display:grid; gap:12px; padding:20px 0; border-top:1px solid #f1f5f9; }
+.score-field { display:grid; grid-template-columns:1fr auto 100px; gap:12px; align-items:center; font-weight:600; }
+.score-field small { color:#94a3b8; }
+@media(max-width:700px){.dashboard-nav{padding:14px 20px}.dashboard-actions{gap:5px}.dashboard-gallery-btn{display:none}.dashboard-panel{padding:20px}.score-field{grid-template-columns:1fr 70px}.score-field input{grid-column:1/-1}}
+.row-actions{display:flex;gap:8px}.row-actions button{padding:8px 12px}.submit-bttn{padding:12px 18px;color:#fff;background:#2563eb;border:0;border-radius:8px;font-weight:600;cursor:pointer}

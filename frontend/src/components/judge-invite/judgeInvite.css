@@ -1,0 +1,53 @@
+.judge-invite-card {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.judge-invite-card h1 {
+    margin-bottom: 14px;
+}
+
+.judge-invite-card>p:not(.dashboard-eyebrow) {
+    max-width: 580px;
+    line-height: 1.7;
+    opacity: 0.75;
+    margin-bottom: 30px;
+}
+
+.judge-accept-btn {
+    border: none;
+    outline: none;
+    background: #2563eb;
+    color: #fff;
+
+    padding: 13px 24px;
+    border-radius: 9px;
+
+    font-size: 15px;
+    font-weight: 600;
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-shadow: 0 6px 18px rgba(37, 99, 235, 0.22);
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.judge-accept-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 22px rgba(37, 99, 235, 0.3);
+}
+
+.judge-accept-btn:active {
+    transform: translateY(0);
+}
+
+.judge-accept-btn:focus-visible {
+    outline: 2px solid #60a5fa;
+    outline-offset: 3px;
+}
